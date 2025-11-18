@@ -775,6 +775,257 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "74xGxx:74LVC1G66"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.54 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74LVC1G66"
+				(at 7.62 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g66.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Bilateral Analog Switch, SOT-23-5/SC-70-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Single Bilateral Analog Switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT* SC*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "74LVC1G66_1_1"
+				(polyline
+					(pts
+						(xy -7.62 0) (xy -3.81 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -7.62) (xy 0 -7.62) (xy 0 -1.905)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -7.62) (xy -7.62 5.715) (xy 0 5.715) (xy 0 3.175)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 0) (xy 3.81 3.81) (xy 3.81 -3.81) (xy -3.81 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -7.62 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 0 180)
+					(length 6.35)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "74LVC1G66_2_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:TestPoint_Small"
 			(pin_numbers
 				(hide yes)
@@ -1702,7 +1953,7 @@
 	)
 	(rectangle
 		(start 17.272 19.304)
-		(end 108.966 136.652)
+		(end 140.97 136.652)
 		(stroke
 			(width 0)
 			(type default)
@@ -1758,7 +2009,7 @@
 	)
 	(text "4:2/8:1 multiplexing"
 		(exclude_from_sim no)
-		(at 96.266 134.366 0)
+		(at 129.032 134.366 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1766,10 +2017,10 @@
 		)
 		(uuid "ac087227-0895-4e33-bf5e-a6774ec30cbc")
 	)
-	(text_box "Original MC14529 specification requires three basic modes:\n\n1) 4:2 multiplexer\n2) 8:1 multiplexer with W and Z tied\n3) High impedance output\n\nFor the Dragon use-case STx is always tied high which makes the high impedance output redundant and in 8:1 mode the X bank is dominant.\nThis implementation reflects that and does not support the high impedance mode or for the Y bank to be dominant\n\nTo fix this for a more general solution two more switches are required to correctly select independent (4:2) or unbiased selection (8:1)\nImplementing the high impedance mode requires an inhibit on each of the outputs. This could be a pair of 74LVC1T45 gates or a single 74LVC2G126. The big issue here is space - even with a 4 layer board it is a tight fit with the minimum components. A 6 layer board would likely be necessary to move all routing off the surface to make space for more components and to use both sides extensively for mounting\n\nThere are four IO pins spare in this minimal implementation, all are output capable which means there is just enough IO to drive two more switches and two tri-state buffers"
+	(text_box "Original MC14529 specification requires three basic modes:\n\n1) 4:2 multiplexer\n2) 8:1 multiplexer with W and Z tied\n3) High impedance output\n\nThis solution provides two final SPST switches on the output to enable mode 3\nThe W and Z outputs can be independent or tied to either the X or Y bank for mode 2 and mode 1"
 		(exclude_from_sim no)
-		(at 16.51 146.304 0)
-		(size 91.948 46.736)
+		(at 17.272 138.684 0)
+		(size 91.948 21.336)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1788,22 +2039,28 @@
 		(uuid "d31f7bb9-c901-42b6-83e0-c120f95d51bd")
 	)
 	(junction
-		(at 171.45 171.45)
+		(at 76.2 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "136f2068-1455-4185-b74e-d18597734015")
 	)
 	(junction
-		(at 133.35 151.13)
+		(at 38.1 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "192e2e0a-e727-48b9-91a5-bce3e1dd3a32")
 	)
 	(junction
-		(at 133.35 171.45)
+		(at 38.1 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c86a96a-d177-4b2d-a006-bf6d6792ecf2")
+	)
+	(junction
+		(at 152.4 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49cf6e7e-4f32-4ea8-88d3-6a844f7e6c1e")
 	)
 	(junction
 		(at 222.25 30.48)
@@ -1812,58 +2069,82 @@
 		(uuid "5230c546-9ed5-4573-9065-323ef466651d")
 	)
 	(junction
-		(at 152.4 171.45)
+		(at 57.15 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5c1e3768-8399-4c18-ab63-52691bc427fd")
 	)
 	(junction
-		(at 152.4 151.13)
+		(at 57.15 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "78e174a8-ce96-4184-b78d-2935cba93ad4")
 	)
 	(junction
-		(at 143.51 171.45)
+		(at 48.26 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d237ea3-68bd-47d6-b50f-4a716a69bf64")
 	)
 	(junction
-		(at 143.51 151.13)
+		(at 48.26 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e0fca06-d1de-4f44-87a8-9f751d11a922")
 	)
 	(junction
-		(at 124.46 171.45)
+		(at 29.21 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82500b38-35eb-422c-8150-f14dff219872")
 	)
 	(junction
-		(at 161.29 171.45)
+		(at 73.66 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91cd6658-d69d-41ee-9d0b-b0b3ce3d7621")
+	)
+	(junction
+		(at 76.2 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2598c4b-d5ec-4c5c-877a-c0b33449ebb0")
+	)
+	(junction
+		(at 66.04 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3aa4b32-3ec0-4430-9f5e-3cfce4267abc")
 	)
 	(junction
-		(at 115.57 151.13)
+		(at 20.32 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae2b616b-394a-4cd4-99b5-18ed1914f207")
 	)
 	(junction
-		(at 161.29 151.13)
+		(at 129.54 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b01e8036-740e-41cc-ae38-3fc40b6ee8ba")
+	)
+	(junction
+		(at 66.04 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b94091c6-bbd5-4527-b85e-47622b9b0f1e")
 	)
 	(junction
-		(at 124.46 151.13)
+		(at 29.21 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1e9cabb-8234-46aa-ab51-a45cb6ef4184")
+	)
+	(junction
+		(at 78.74 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c84e5ffc-1a8d-4a33-b63b-9e5f7dbf83cd")
 	)
 	(junction
 		(at 227.33 30.48)
@@ -1871,17 +2152,15 @@
 		(color 0 0 0 0)
 		(uuid "cde88f89-982f-41c1-84ef-673afe74598d")
 	)
-	(no_connect
-		(at 234.95 44.45)
-		(uuid "2526286c-50b4-4604-a4a3-f6e35b0b4725")
+	(junction
+		(at 86.36 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2800b40-c6d6-41c6-928a-b68a1e884110")
 	)
 	(no_connect
 		(at 214.63 57.15)
 		(uuid "2fe116ad-1f1d-4edd-af81-374440ade757")
-	)
-	(no_connect
-		(at 234.95 41.91)
-		(uuid "9733e421-ef30-4dd8-9445-e420dcab5be1")
 	)
 	(no_connect
 		(at 234.95 59.69)
@@ -1889,7 +2168,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 151.13) (xy 124.46 151.13)
+			(xy 20.32 168.91) (xy 29.21 168.91)
 		)
 		(stroke
 			(width 0)
@@ -1899,7 +2178,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 171.45) (xy 161.29 171.45)
+			(xy 57.15 189.23) (xy 66.04 189.23)
 		)
 		(stroke
 			(width 0)
@@ -1909,33 +2188,13 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 171.45) (xy 124.46 171.45)
+			(xy 20.32 189.23) (xy 29.21 189.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "05228df7-e16c-403c-8d45-fd564f813355")
-	)
-	(wire
-		(pts
-			(xy 78.74 67.31) (xy 81.28 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08798664-81b6-4213-a7a9-e991935a04a9")
-	)
-	(wire
-		(pts
-			(xy 73.66 77.47) (xy 81.28 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09010877-5df0-4c16-85b2-cb174dc0397d")
 	)
 	(wire
 		(pts
@@ -1949,13 +2208,23 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 41.91) (xy 53.34 41.91)
+			(xy 73.66 76.2) (xy 73.66 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f77d59e-59c9-47a6-a8a2-25af5e6eb10c")
+		(uuid "1bbb601d-ba1e-4ed7-84e3-8d95e1af6196")
+	)
+	(wire
+		(pts
+			(xy 81.28 76.2) (xy 73.66 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22760ce0-b4b0-4e79-8bd8-096edb0f4cb7")
 	)
 	(wire
 		(pts
@@ -1979,13 +2248,23 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 46.99) (xy 73.66 77.47)
+			(xy 78.74 48.26) (xy 82.55 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f95ba20-f121-42c4-938c-6e3dbbc48507")
+		(uuid "33d4c691-99cf-4868-82b8-35b0143ac4f1")
+	)
+	(wire
+		(pts
+			(xy 129.54 190.5) (xy 152.4 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ad8fd90-c6b1-4ab2-a039-c6bcf42b9de2")
 	)
 	(wire
 		(pts
@@ -2029,13 +2308,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 67.31) (xy 50.8 41.91)
+			(xy 109.22 53.34) (xy 102.87 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "423ac34d-f9cc-44d4-9615-10abc2d168ab")
+		(uuid "484c2c85-9b54-4012-bad7-2345eb5a99d1")
 	)
 	(wire
 		(pts
@@ -2049,7 +2328,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 151.13) (xy 161.29 151.13)
+			(xy 57.15 168.91) (xy 66.04 168.91)
 		)
 		(stroke
 			(width 0)
@@ -2059,7 +2338,17 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 151.13) (xy 171.45 151.13)
+			(xy 78.74 99.06) (xy 78.74 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f603faf-440c-4ba5-bea9-53130bc75f7f")
+	)
+	(wire
+		(pts
+			(xy 66.04 168.91) (xy 76.2 168.91)
 		)
 		(stroke
 			(width 0)
@@ -2069,7 +2358,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 171.45) (xy 133.35 171.45)
+			(xy 29.21 189.23) (xy 38.1 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2079,7 +2368,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 171.45) (xy 152.4 171.45)
+			(xy 50.8 104.14) (xy 53.34 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "687bdfba-c037-447f-a30a-3b7ca081d899")
+	)
+	(wire
+		(pts
+			(xy 48.26 189.23) (xy 57.15 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2089,7 +2388,27 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 151.13) (xy 152.4 151.13)
+			(xy 45.72 40.64) (xy 53.34 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71baca1d-f974-43c1-b736-86da8fab063c")
+	)
+	(wire
+		(pts
+			(xy 50.8 50.8) (xy 53.34 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74fca4c9-40ef-494e-b5cf-446e9112cad7")
+	)
+	(wire
+		(pts
+			(xy 48.26 168.91) (xy 57.15 168.91)
 		)
 		(stroke
 			(width 0)
@@ -2099,7 +2418,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 171.45) (xy 143.51 171.45)
+			(xy 38.1 189.23) (xy 48.26 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2109,13 +2428,33 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 99.06) (xy 78.74 67.31)
+			(xy 78.74 86.36) (xy 81.28 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "89d6ef6a-a81f-4f39-a665-178506419c31")
+		(uuid "89dd62f9-a582-4452-9615-1935c3ba26a8")
+	)
+	(wire
+		(pts
+			(xy 76.2 168.91) (xy 86.36 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e2c4ff8-cb64-463c-90e3-8b9b449ff6a2")
+	)
+	(wire
+		(pts
+			(xy 50.8 67.31) (xy 50.8 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f3531c1-f450-4f40-98eb-b3e6d6a07fc3")
 	)
 	(wire
 		(pts
@@ -2129,13 +2468,13 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 40.64) (xy 45.72 52.07)
+			(xy 129.54 170.18) (xy 152.4 170.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "98b3ca34-7008-46bd-9cf9-e5001bf12589")
+		(uuid "970c0e1f-9329-4bcb-a1ce-d75fb0bd9641")
 	)
 	(wire
 		(pts
@@ -2159,7 +2498,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 119.38) (xy 53.34 119.38)
+			(xy 45.72 119.38) (xy 50.8 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2179,7 +2518,17 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 171.45) (xy 171.45 171.45)
+			(xy 73.66 58.42) (xy 82.55 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af68ee4a-477c-4db7-bec8-1dcca4b91f83")
+	)
+	(wire
+		(pts
+			(xy 66.04 189.23) (xy 76.2 189.23)
 		)
 		(stroke
 			(width 0)
@@ -2189,7 +2538,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 151.13) (xy 143.51 151.13)
+			(xy 38.1 168.91) (xy 48.26 168.91)
 		)
 		(stroke
 			(width 0)
@@ -2199,13 +2548,43 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 52.07) (xy 53.34 52.07)
+			(xy 73.66 45.72) (xy 73.66 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c959ce4d-e114-4252-bd96-ee401fd12a03")
+		(uuid "c51ae4e2-b1ce-412c-a70a-9f9d79770c5d")
+	)
+	(wire
+		(pts
+			(xy 109.22 81.28) (xy 101.6 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c56fa9d0-90ca-4910-9f82-d38b5a59cdda")
+	)
+	(wire
+		(pts
+			(xy 86.36 189.23) (xy 76.2 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cde04d83-f583-4b10-9fa0-073c90f5f2d3")
+	)
+	(wire
+		(pts
+			(xy 78.74 86.36) (xy 78.74 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdfc78fb-ca91-438a-8451-ccbaba474472")
 	)
 	(wire
 		(pts
@@ -2219,7 +2598,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 151.13) (xy 133.35 151.13)
+			(xy 29.21 168.91) (xy 38.1 168.91)
 		)
 		(stroke
 			(width 0)
@@ -2229,23 +2608,13 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 119.38) (xy 53.34 104.14)
+			(xy 50.8 119.38) (xy 50.8 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fab83a19-2a4f-4fa8-97e2-af190e58d207")
-	)
-	(label "W"
-		(at 73.66 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "067337a6-0482-4c1e-adc4-87bb3feac48a")
 	)
 	(label "STy"
 		(at 234.95 54.61 0)
@@ -2256,6 +2625,16 @@
 			(justify left bottom)
 		)
 		(uuid "0edfe44d-7fd7-4d6f-bebb-df603b13de7a")
+	)
+	(label "Y23"
+		(at 46.99 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f2d97af-d862-4c3b-a543-89d5f325ae57")
 	)
 	(label "Y0"
 		(at 25.4 114.3 180)
@@ -2276,6 +2655,16 @@
 			(justify right bottom)
 		)
 		(uuid "129bae99-aa15-4f07-b372-96ad7a796fdd")
+	)
+	(label "WC"
+		(at 234.95 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "15d99751-5b8e-495f-a0f9-cac4f773ab03")
 	)
 	(label "X0"
 		(at 246.38 106.68 180)
@@ -2327,6 +2716,16 @@
 		)
 		(uuid "24c6ff2c-8443-4cc0-afd7-e9952a2f0f14")
 	)
+	(label "W"
+		(at 132.08 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26730583-3453-4252-a764-5c54a8f41a22")
+	)
 	(label "Y2"
 		(at 25.4 88.9 180)
 		(effects
@@ -2346,6 +2745,36 @@
 			(justify right bottom)
 		)
 		(uuid "29d21f63-9e7f-4087-ab84-8367456a7143")
+	)
+	(label "OE"
+		(at 109.22 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "321c7b58-5962-4edc-b158-84e054d079a0")
+	)
+	(label "Z"
+		(at 132.08 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4214dca1-6754-413d-960c-f327d8eb1774")
+	)
+	(label "Y"
+		(at 78.74 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "42d96ddc-8092-41fc-b6ae-463588cfc1dc")
 	)
 	(label "YC"
 		(at 73.66 88.9 0)
@@ -2367,8 +2796,8 @@
 		)
 		(uuid "4810ecd6-790d-4f33-a32d-19ac4955c237")
 	)
-	(label "V"
-		(at 101.6 62.23 0)
+	(label "ZC"
+		(at 102.87 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2386,6 +2815,16 @@
 			(justify right bottom)
 		)
 		(uuid "4db15bd7-af64-4a43-b51f-6728ba5b9047")
+	)
+	(label "X01"
+		(at 45.72 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "531466c7-433e-4cd9-a9d3-6d8130bbd1c1")
 	)
 	(label "Z"
 		(at 271.78 106.68 0)
@@ -2408,7 +2847,7 @@
 		(uuid "586035ff-a3b1-4f9c-bfe3-dea8ddb83938")
 	)
 	(label "XC"
-		(at 73.66 36.83 0)
+		(at 73.66 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2418,7 +2857,7 @@
 		(uuid "59069f2e-db32-4814-ac46-b417f267eb01")
 	)
 	(label "YA"
-		(at 214.63 46.99 180)
+		(at 214.63 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2457,6 +2896,16 @@
 		)
 		(uuid "672cb0a4-d049-426f-aa6f-1068e97b006e")
 	)
+	(label "X"
+		(at 73.66 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "676668cf-7f92-48c5-b6de-87a19afe3757")
+	)
 	(label "X2"
 		(at 25.4 72.39 180)
 		(effects
@@ -2476,6 +2925,16 @@
 			(justify right bottom)
 		)
 		(uuid "6edf5783-850a-4971-a710-f8bcddb943a9")
+	)
+	(label "WC"
+		(at 101.6 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "71816180-657a-405a-b602-895b0182d6e2")
 	)
 	(label "Y2"
 		(at 246.38 124.46 180)
@@ -2506,6 +2965,16 @@
 			(justify right bottom)
 		)
 		(uuid "79632ab0-9fc3-4db0-9bff-550ca670931e")
+	)
+	(label "WG"
+		(at 101.6 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7df9ac52-6fc6-4528-9dfd-a38379ae25bc")
 	)
 	(label "STx"
 		(at 246.38 137.16 180)
@@ -2557,6 +3026,26 @@
 		)
 		(uuid "97e747b0-cd58-4a4a-a64e-947fc3b178a1")
 	)
+	(label "Y01"
+		(at 50.8 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9bfd6a84-7a6a-4893-9019-ef5856931c1e")
+	)
+	(label "ZG"
+		(at 102.87 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a01884da-ea24-45da-ae84-c8fa2732d54d")
+	)
 	(label "X1"
 		(at 25.4 35.56 180)
 		(effects
@@ -2577,15 +3066,15 @@
 		)
 		(uuid "a3383853-b2b3-4fda-9646-79fbc4019009")
 	)
-	(label "Z"
-		(at 101.6 72.39 0)
+	(label "X23"
+		(at 50.8 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "aa940ef7-6dd7-4627-b87a-94ab09b86090")
+		(uuid "a33bad58-e5a3-46f2-91a3-b59288b9a86c")
 	)
 	(label "XC"
 		(at 214.63 52.07 180)
@@ -2597,8 +3086,18 @@
 		)
 		(uuid "ad217722-5972-4510-be2a-39da4a7b6b5e")
 	)
+	(label "OE"
+		(at 109.22 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "af95ddd4-6acf-4abe-811f-566954772d54")
+	)
 	(label "YC"
-		(at 214.63 59.69 180)
+		(at 214.63 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2607,7 +3106,7 @@
 		)
 		(uuid "b45c2a28-896e-4c4b-9736-d4fbc24d6808")
 	)
-	(label "V"
+	(label "ZC"
 		(at 234.95 39.37 0)
 		(effects
 			(font
@@ -2677,6 +3176,16 @@
 		)
 		(uuid "e70ea7af-82dd-42b4-b12a-171af30f5018")
 	)
+	(label "OE"
+		(at 234.95 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eae6d76a-96e5-4422-8434-c7ce1eff33be")
+	)
 	(label "B"
 		(at 234.95 46.99 0)
 		(effects
@@ -2696,6 +3205,72 @@
 			(justify left bottom)
 		)
 		(uuid "f65b8349-c005-4c2e-9cd6-1ebc29514178")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "054b281a-8b5d-4aba-bde6-2bcaf995250c")
+		(property "Reference" "#PWR011"
+			(at 152.4 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.4 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fddc4fa4-5008-47b3-bb65-379e7461228e")
+		)
+		(instances
+			(project "Next4529"
+				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
@@ -2766,7 +3341,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 124.46 161.29 0)
+		(at 29.21 179.07 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2775,7 +3350,7 @@
 		(fields_autoplaced yes)
 		(uuid "11fbc91f-9b77-4a66-8c2c-c2fae61b5491")
 		(property "Reference" "U3"
-			(at 128.27 160.0199 0)
+			(at 33.02 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2784,7 +3359,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 128.27 162.5599 0)
+			(at 33.02 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2792,8 +3367,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 124.46 161.29 0)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 29.21 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2802,7 +3377,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 124.46 161.29 0)
+			(at 29.21 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2811,7 +3386,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 124.46 161.29 0)
+			(at 29.21 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2820,7 +3395,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 124.46 161.29 0)
+			(at 29.21 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2881,7 +3456,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
 			(at 35.56 119.38 0)
 			(effects
 				(font
@@ -2946,7 +3521,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 171.45 161.29 0)
+		(at 76.2 179.07 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2955,7 +3530,7 @@
 		(fields_autoplaced yes)
 		(uuid "1fefec91-2a04-412e-8cf0-16d4f40ec8fc")
 		(property "Reference" "U5"
-			(at 175.26 160.0199 0)
+			(at 80.01 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2964,7 +3539,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 175.26 162.5599 0)
+			(at 80.01 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2972,8 +3547,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 171.45 161.29 0)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 76.2 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2982,7 +3557,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 171.45 161.29 0)
+			(at 76.2 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2991,7 +3566,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 171.45 161.29 0)
+			(at 76.2 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3000,7 +3575,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 171.45 161.29 0)
+			(at 76.2 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3127,7 +3702,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
 			(at 35.56 67.31 0)
 			(effects
 				(font
@@ -3186,6 +3761,85 @@
 				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
 					(reference "U2")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74LVC1G66")
+		(at 152.4 180.34 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28e0e907-14bf-4145-bfab-d57151449174")
+		(property "Reference" "U10"
+			(at 158.75 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LVC1G66DSF"
+			(at 158.75 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 152.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g66.pdf"
+			(at 152.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Bilateral Analog Switch"
+			(at 152.4 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5e40d4d6-f8a7-4463-b2e3-4c6fecfbbb2c")
+		)
+		(pin "4"
+			(uuid "97478ff6-c4f5-4489-917a-ed2d0e171b39")
+		)
+		(pin "1"
+			(uuid "df7e5c16-edc9-4489-aecf-90beda915263")
+		)
+		(pin "5"
+			(uuid "d46e698f-80ad-4422-879b-48175a1216e8")
+		)
+		(pin "3"
+			(uuid "86d51d50-0f46-463f-a15d-6b59ce10f25f")
+		)
+		(instances
+			(project ""
+				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
+					(reference "U10")
+					(unit 2)
 				)
 			)
 		)
@@ -3279,7 +3933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ba6119a-6fe2-4c1c-bfa9-ce102044a5ed")
-		(property "Reference" "U9"
+		(property "Reference" "IC1"
 			(at 261.2233 99.06 0)
 			(effects
 				(font
@@ -3375,7 +4029,7 @@
 		(instances
 			(project ""
 				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
-					(reference "U9")
+					(reference "IC1")
 					(unit 1)
 				)
 			)
@@ -3383,7 +4037,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 161.29 161.29 0)
+		(at 66.04 179.07 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3392,7 +4046,7 @@
 		(fields_autoplaced yes)
 		(uuid "3db544e4-1739-4807-9e06-b18353d2903e")
 		(property "Reference" "U6"
-			(at 165.1 160.0199 0)
+			(at 69.85 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3401,7 +4055,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 165.1 162.5599 0)
+			(at 69.85 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3409,8 +4063,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 161.29 161.29 0)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 66.04 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3419,7 +4073,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 161.29 161.29 0)
+			(at 66.04 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3428,7 +4082,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 161.29 161.29 0)
+			(at 66.04 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3437,7 +4091,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 161.29 161.29 0)
+			(at 66.04 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3473,6 +4127,85 @@
 		)
 	)
 	(symbol
+		(lib_id "74xGxx:74LVC1G66")
+		(at 129.54 180.34 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43a57153-052f-472a-94b4-e11612e7b766")
+		(property "Reference" "U9"
+			(at 135.89 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LVC1G66DSF"
+			(at 135.89 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 129.54 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g66.pdf"
+			(at 129.54 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Bilateral Analog Switch"
+			(at 129.54 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "eb86ad0b-b914-49d2-b5ac-e0335fef0947")
+		)
+		(pin "3"
+			(uuid "d39727ac-ccae-42ca-8db1-1ab2c97b2e5a")
+		)
+		(pin "5"
+			(uuid "c6b01191-c76c-48d6-b98d-4275cba02493")
+		)
+		(pin "1"
+			(uuid "01acdcae-af0b-4f56-a9de-3c0c8d7c471d")
+		)
+		(pin "2"
+			(uuid "2b725607-9f52-487b-8e72-e57dff3aa92e")
+		)
+		(instances
+			(project ""
+				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
+					(reference "U9")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
 		(at 35.56 40.64 180)
 		(unit 1)
@@ -3498,7 +4231,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
 			(at 35.56 40.64 0)
 			(effects
 				(font
@@ -3563,7 +4296,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 171.45 171.45 0)
+		(at 86.36 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3572,7 +4305,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e0fb2f9-a3c5-4b1b-825b-e476ebaec32d")
 		(property "Reference" "#PWR05"
-			(at 171.45 177.8 0)
+			(at 86.36 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3581,7 +4314,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 171.45 176.53 0)
+			(at 86.36 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3589,7 +4322,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 171.45 0)
+			(at 86.36 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3598,7 +4331,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 171.45 0)
+			(at 86.36 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3607,7 +4340,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 171.45 0)
+			(at 86.36 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3695,7 +4428,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 133.35 161.29 0)
+		(at 38.1 179.07 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3704,7 +4437,7 @@
 		(fields_autoplaced yes)
 		(uuid "55004446-6fbc-4711-a0a0-2043e87642d9")
 		(property "Reference" "U2"
-			(at 137.16 160.0199 0)
+			(at 41.91 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3713,7 +4446,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 137.16 162.5599 0)
+			(at 41.91 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3721,8 +4454,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 133.35 161.29 0)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 38.1 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3731,7 +4464,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 133.35 161.29 0)
+			(at 38.1 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3740,7 +4473,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 133.35 161.29 0)
+			(at 38.1 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3749,7 +4482,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 133.35 161.29 0)
+			(at 38.1 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3785,6 +4518,95 @@
 		)
 	)
 	(symbol
+		(lib_id "74xGxx:74LVC1G3157")
+		(at 91.44 81.28 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d3c0451-2e67-48be-aba3-f418d9c4f4e9")
+		(property "Reference" "U8"
+			(at 92.71 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1G3157"
+			(at 92.71 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 91.44 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+			(at 91.44 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
+			(at 91.44 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "296-14909-1-ND"
+			(at 91.44 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "636dce0e-9129-4d39-8e42-abdbe2515484")
+		)
+		(pin "3"
+			(uuid "45542c49-30b3-4f3c-8350-5970f67fe7d2")
+		)
+		(pin "1"
+			(uuid "a89a8264-6daf-44e4-9ab3-f3f3dcf8f155")
+		)
+		(pin "5"
+			(uuid "5e72904f-6f2d-4c0b-84aa-d73b28d7608c")
+		)
+		(pin "4"
+			(uuid "b1e0bf76-3ee1-4bc9-b79b-4dd03b69d97d")
+		)
+		(pin "2"
+			(uuid "03eb1399-6e3c-4e99-ac7d-f2c005a70f22")
+		)
+		(instances
+			(project "Next4529"
+				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Library:SLG46824G")
 		(at 224.79 49.53 0)
 		(unit 1)
@@ -3794,7 +4616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b290cdb-c321-40fc-9c0a-51386cbb3465")
-		(property "Reference" "U8"
+		(property "Reference" "U11"
 			(at 226.9333 67.31 0)
 			(effects
 				(font
@@ -3911,7 +4733,7 @@
 		(instances
 			(project ""
 				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
-					(reference "U8")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -3919,7 +4741,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 143.51 161.29 0)
+		(at 48.26 179.07 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3928,7 +4750,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d374207-5b1a-400d-b559-bdba8b4fefc1")
 		(property "Reference" "U1"
-			(at 147.32 160.0199 0)
+			(at 52.07 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3937,7 +4759,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 147.32 162.5599 0)
+			(at 52.07 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3945,8 +4767,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 143.51 161.29 0)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 48.26 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3955,7 +4777,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 143.51 161.29 0)
+			(at 48.26 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3964,7 +4786,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 143.51 161.29 0)
+			(at 48.26 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3973,7 +4795,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 143.51 161.29 0)
+			(at 48.26 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4365,7 +5187,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
 			(at 63.5 99.06 0)
 			(effects
 				(font
@@ -4574,8 +5396,85 @@
 		)
 	)
 	(symbol
+		(lib_id "74xGxx:74LVC1G66")
+		(at 121.92 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5cfd094-7d37-4f95-9ab8-3ea6ce926256")
+		(property "Reference" "U9"
+			(at 120.015 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1G66DSF"
+			(at 120.015 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 121.92 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g66.pdf"
+			(at 121.92 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Bilateral Analog Switch"
+			(at 121.92 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "eb86ad0b-b914-49d2-b5ac-e0335fef0947")
+		)
+		(pin "3"
+			(uuid "d39727ac-ccae-42ca-8db1-1ab2c97b2e5a")
+		)
+		(pin "5"
+			(uuid "c6b01191-c76c-48d6-b98d-4275cba02493")
+		)
+		(pin "1"
+			(uuid "01acdcae-af0b-4f56-a9de-3c0c8d7c471d")
+		)
+		(pin "2"
+			(uuid "2b725607-9f52-487b-8e72-e57dff3aa92e")
+		)
+		(instances
+			(project ""
+				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 91.44 72.39 180)
+		(at 92.71 53.34 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4584,7 +5483,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6b0a420-31f9-4814-b575-26ea4ddc398a")
 		(property "Reference" "U7"
-			(at 92.71 57.15 0)
+			(at 93.98 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4592,15 +5491,15 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 92.71 59.69 0)
+			(at 93.98 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 91.44 72.39 0)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 92.71 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4609,7 +5508,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 91.44 72.39 0)
+			(at 92.71 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4618,7 +5517,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 91.44 72.39 0)
+			(at 92.71 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4627,7 +5526,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 91.44 72.39 0)
+			(at 92.71 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4663,8 +5562,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 129.54 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb9b363f-5a61-4586-b0c7-1c8709d55ab9")
+		(property "Reference" "#PWR010"
+			(at 129.54 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 129.54 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 129.54 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "015b135e-3fad-401f-9300-0543696c7b72")
+		)
+		(instances
+			(project "Next4529"
+				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 115.57 161.29 0)
+		(at 20.32 179.07 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4673,7 +5638,7 @@
 		(fields_autoplaced yes)
 		(uuid "d44d1979-04bf-481e-a1b7-711f65d93a65")
 		(property "Reference" "U4"
-			(at 119.38 160.0199 0)
+			(at 24.13 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4682,7 +5647,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 119.38 162.5599 0)
+			(at 24.13 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4690,8 +5655,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 115.57 161.29 0)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 20.32 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4700,7 +5665,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 115.57 161.29 0)
+			(at 20.32 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4709,7 +5674,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 115.57 161.29 0)
+			(at 20.32 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4718,7 +5683,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 115.57 161.29 0)
+			(at 20.32 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4754,8 +5719,99 @@
 		)
 	)
 	(symbol
+		(lib_id "74xGxx:74LVC1G3157")
+		(at 86.36 179.07 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9e70c36-f870-4843-b3ac-a6c612593de0")
+		(property "Reference" "U8"
+			(at 90.17 177.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LVC1G3157"
+			(at 90.17 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 86.36 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+			(at 86.36 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
+			(at 86.36 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "296-14909-1-ND"
+			(at 86.36 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "c1ec45e4-a6a2-40fc-8547-e772cdc17a30")
+		)
+		(pin "1"
+			(uuid "108648a5-c434-45c4-bfbe-06ac7f3fb5ef")
+		)
+		(pin "3"
+			(uuid "ae2f6360-1bbe-48b9-a9af-6d2053e4c941")
+		)
+		(pin "2"
+			(uuid "79fba198-6eb9-4a06-b07b-6eb91d6731ab")
+		)
+		(pin "5"
+			(uuid "84bb605f-af39-4f3b-a135-f9655ac50dc1")
+		)
+		(pin "4"
+			(uuid "77c1dcbb-0fdb-4814-abe9-a9a863841e0f")
+		)
+		(instances
+			(project "Next4529"
+				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
+					(reference "U8")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
-		(at 115.57 151.13 0)
+		(at 20.32 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4764,7 +5820,7 @@
 		(fields_autoplaced yes)
 		(uuid "da308dda-1f36-40e8-80d4-e238ac886607")
 		(property "Reference" "#PWR03"
-			(at 115.57 154.94 0)
+			(at 20.32 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4773,7 +5829,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 115.57 146.05 0)
+			(at 20.32 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4781,7 +5837,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 151.13 0)
+			(at 20.32 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4790,7 +5846,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 151.13 0)
+			(at 20.32 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4799,7 +5855,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 115.57 151.13 0)
+			(at 20.32 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4820,8 +5876,85 @@
 		)
 	)
 	(symbol
+		(lib_id "74xGxx:74LVC1G66")
+		(at 121.92 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e141c3c4-5cd3-4ddf-8597-e9093024758f")
+		(property "Reference" "U10"
+			(at 120.015 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1G66DSF"
+			(at 120.015 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 121.92 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g66.pdf"
+			(at 121.92 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Bilateral Analog Switch"
+			(at 121.92 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5e40d4d6-f8a7-4463-b2e3-4c6fecfbbb2c")
+		)
+		(pin "4"
+			(uuid "97478ff6-c4f5-4489-917a-ed2d0e171b39")
+		)
+		(pin "1"
+			(uuid "df7e5c16-edc9-4489-aecf-90beda915263")
+		)
+		(pin "5"
+			(uuid "d46e698f-80ad-4422-879b-48175a1216e8")
+		)
+		(pin "3"
+			(uuid "86d51d50-0f46-463f-a15d-6b59ce10f25f")
+		)
+		(instances
+			(project ""
+				(path "/b62b28d7-55af-48c8-877b-87e5e77d21b5"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 63.5 46.99 180)
+		(at 63.5 45.72 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4830,7 +5963,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6b7258a-79ba-42c6-b128-ac25476a4c6c")
 		(property "Reference" "U5"
-			(at 64.77 31.75 0)
+			(at 64.77 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4838,15 +5971,15 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 64.77 34.29 0)
+			(at 64.77 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 63.5 46.99 0)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 63.5 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4855,7 +5988,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 63.5 46.99 0)
+			(at 63.5 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4864,7 +5997,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 63.5 46.99 0)
+			(at 63.5 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4873,7 +6006,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 63.5 46.99 0)
+			(at 63.5 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4934,7 +6067,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
 			(at 35.56 93.98 0)
 			(effects
 				(font
@@ -4999,7 +6132,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 152.4 161.29 0)
+		(at 57.15 179.07 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5008,7 +6141,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9d4ebe0-5af1-4ed1-b070-267b3b4ae052")
 		(property "Reference" "U7"
-			(at 156.21 160.0199 0)
+			(at 60.96 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5017,7 +6150,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 156.21 162.5599 0)
+			(at 60.96 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5025,8 +6158,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 152.4 161.29 0)
+		(property "Footprint" "Package_SON:Texas_USON-6_1x1.45mm_P0.5mm_SMD"
+			(at 57.15 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5035,7 +6168,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 152.4 161.29 0)
+			(at 57.15 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5044,7 +6177,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 152.4 161.29 0)
+			(at 57.15 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5053,7 +6186,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 152.4 161.29 0)
+			(at 57.15 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
