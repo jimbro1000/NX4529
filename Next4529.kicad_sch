@@ -1700,109 +1700,196 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 17.272 19.304)
+		(end 108.966 136.652)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3016c986-2a92-4ec8-b2fa-455b60738cc1)
+	)
+	(rectangle
+		(start 193.802 19.558)
+		(end 281.178 83.058)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5effc240-d0f4-427e-8a82-4a45248ba3da)
+	)
+	(rectangle
+		(start 237.236 86.614)
+		(end 280.67 159.512)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid c62e9aba-89a4-40bb-bb02-255da3536baa)
+	)
+	(text "Renesas CPLD"
+		(exclude_from_sim no)
+		(at 273.05 81.534 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4415b93d-3e8f-4f19-a475-9ba546fbe7a3")
+	)
+	(text "DIP-16 footprint"
+		(exclude_from_sim no)
+		(at 270.51 157.988 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7a85da98-d285-42ec-8727-088cceebdafe")
+	)
+	(text "4:2/8:1 multiplexing"
+		(exclude_from_sim no)
+		(at 96.266 134.366 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ac087227-0895-4e33-bf5e-a6774ec30cbc")
+	)
+	(text_box "Original MC14529 specification requires three basic modes:\n\n1) 4:2 multiplexer\n2) 8:1 multiplexer with W and Z tied\n3) High impedance output\n\nFor the Dragon use-case STx is always tied high which makes the high impedance output redundant and in 8:1 mode the X bank is dominant.\nThis implementation reflects that and does not support the high impedance mode or for the Y bank to be dominant\n\nTo fix this for a more general solution two more switches are required to correctly select independent (4:2) or unbiased selection (8:1)\nImplementing the high impedance mode requires an inhibit on each of the outputs. This could be a pair of 74LVC1T45 gates or a single 74LVC2G126. The big issue here is space - even with a 4 layer board it is a tight fit with the minimum components. A 6 layer board would likely be necessary to move all routing off the surface to make space for more components and to use both sides extensively for mounting\n\nThere are four IO pins spare in this minimal implementation, all are output capable which means there is just enough IO to drive two more switches and two tri-state buffers"
+		(exclude_from_sim no)
+		(at 16.51 146.304 0)
+		(size 91.948 46.736)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 255 241 73 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d31f7bb9-c901-42b6-83e0-c120f95d51bd")
+	)
 	(junction
-		(at 266.7 156.21)
+		(at 171.45 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "136f2068-1455-4185-b74e-d18597734015")
 	)
 	(junction
-		(at 228.6 135.89)
+		(at 133.35 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "192e2e0a-e727-48b9-91a5-bce3e1dd3a32")
 	)
 	(junction
-		(at 228.6 156.21)
+		(at 133.35 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c86a96a-d177-4b2d-a006-bf6d6792ecf2")
 	)
 	(junction
-		(at 163.83 69.85)
+		(at 222.25 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5230c546-9ed5-4573-9065-323ef466651d")
 	)
 	(junction
-		(at 247.65 156.21)
+		(at 152.4 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5c1e3768-8399-4c18-ab63-52691bc427fd")
 	)
 	(junction
-		(at 247.65 135.89)
+		(at 152.4 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "78e174a8-ce96-4184-b78d-2935cba93ad4")
 	)
 	(junction
-		(at 238.76 156.21)
+		(at 143.51 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d237ea3-68bd-47d6-b50f-4a716a69bf64")
 	)
 	(junction
-		(at 238.76 135.89)
+		(at 143.51 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7e0fca06-d1de-4f44-87a8-9f751d11a922")
 	)
 	(junction
-		(at 219.71 156.21)
+		(at 124.46 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82500b38-35eb-422c-8150-f14dff219872")
 	)
 	(junction
-		(at 256.54 156.21)
+		(at 161.29 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3aa4b32-3ec0-4430-9f5e-3cfce4267abc")
 	)
 	(junction
-		(at 210.82 135.89)
+		(at 115.57 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae2b616b-394a-4cd4-99b5-18ed1914f207")
 	)
 	(junction
-		(at 256.54 135.89)
+		(at 161.29 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b94091c6-bbd5-4527-b85e-47622b9b0f1e")
 	)
 	(junction
-		(at 219.71 135.89)
+		(at 124.46 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1e9cabb-8234-46aa-ab51-a45cb6ef4184")
 	)
 	(junction
-		(at 168.91 69.85)
+		(at 227.33 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cde88f89-982f-41c1-84ef-673afe74598d")
 	)
 	(no_connect
-		(at 176.53 83.82)
+		(at 234.95 44.45)
 		(uuid "2526286c-50b4-4604-a4a3-f6e35b0b4725")
 	)
 	(no_connect
-		(at 156.21 96.52)
+		(at 214.63 57.15)
 		(uuid "2fe116ad-1f1d-4edd-af81-374440ade757")
 	)
 	(no_connect
-		(at 176.53 81.28)
+		(at 234.95 41.91)
 		(uuid "9733e421-ef30-4dd8-9445-e420dcab5be1")
 	)
 	(no_connect
-		(at 176.53 99.06)
+		(at 234.95 59.69)
 		(uuid "ecbb12d1-e03c-4a89-8601-be52f68ea62d")
 	)
 	(wire
 		(pts
-			(xy 210.82 135.89) (xy 219.71 135.89)
+			(xy 115.57 151.13) (xy 124.46 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1812,7 +1899,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 156.21) (xy 256.54 156.21)
+			(xy 152.4 171.45) (xy 161.29 171.45)
 		)
 		(stroke
 			(width 0)
@@ -1822,7 +1909,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 156.21) (xy 219.71 156.21)
+			(xy 115.57 171.45) (xy 124.46 171.45)
 		)
 		(stroke
 			(width 0)
@@ -1832,7 +1919,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 76.2) (xy 115.57 76.2)
+			(xy 78.74 67.31) (xy 81.28 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1842,7 +1929,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 86.36) (xy 115.57 86.36)
+			(xy 73.66 77.47) (xy 81.28 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1852,7 +1939,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 68.58) (xy 168.91 69.85)
+			(xy 227.33 29.21) (xy 227.33 30.48)
 		)
 		(stroke
 			(width 0)
@@ -1862,7 +1949,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 50.8) (xy 87.63 50.8)
+			(xy 50.8 41.91) (xy 53.34 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1872,7 +1959,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 69.85) (xy 163.83 71.12)
+			(xy 222.25 30.48) (xy 222.25 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1882,7 +1969,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 69.85) (xy 214.63 69.85)
+			(xy 256.54 49.53) (xy 259.08 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1892,7 +1979,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 55.88) (xy 107.95 86.36)
+			(xy 73.66 46.99) (xy 73.66 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1902,7 +1989,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 69.85) (xy 147.32 69.85)
+			(xy 222.25 30.48) (xy 205.74 30.48)
 		)
 		(stroke
 			(width 0)
@@ -1912,7 +1999,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 69.85) (xy 147.32 71.12)
+			(xy 205.74 30.48) (xy 205.74 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1922,7 +2009,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 74.93) (xy 212.09 74.93)
+			(xy 259.08 54.61) (xy 256.54 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1932,7 +2019,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 102.87) (xy 87.63 102.87)
+			(xy 45.72 93.98) (xy 53.34 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1942,7 +2029,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 76.2) (xy 85.09 50.8)
+			(xy 50.8 67.31) (xy 50.8 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1952,7 +2039,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 68.58) (xy 163.83 69.85)
+			(xy 222.25 29.21) (xy 222.25 30.48)
 		)
 		(stroke
 			(width 0)
@@ -1962,7 +2049,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 135.89) (xy 256.54 135.89)
+			(xy 152.4 151.13) (xy 161.29 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1972,7 +2059,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 135.89) (xy 266.7 135.89)
+			(xy 161.29 151.13) (xy 171.45 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1982,7 +2069,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 156.21) (xy 228.6 156.21)
+			(xy 124.46 171.45) (xy 133.35 171.45)
 		)
 		(stroke
 			(width 0)
@@ -1992,7 +2079,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 156.21) (xy 247.65 156.21)
+			(xy 143.51 171.45) (xy 152.4 171.45)
 		)
 		(stroke
 			(width 0)
@@ -2002,7 +2089,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 135.89) (xy 247.65 135.89)
+			(xy 143.51 151.13) (xy 152.4 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2012,7 +2099,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 156.21) (xy 238.76 156.21)
+			(xy 133.35 171.45) (xy 143.51 171.45)
 		)
 		(stroke
 			(width 0)
@@ -2022,7 +2109,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 107.95) (xy 113.03 76.2)
+			(xy 78.74 99.06) (xy 78.74 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2032,7 +2119,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 69.85) (xy 184.15 71.12)
+			(xy 242.57 30.48) (xy 242.57 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2042,7 +2129,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 49.53) (xy 80.01 60.96)
+			(xy 45.72 40.64) (xy 45.72 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2052,7 +2139,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 107.95) (xy 113.03 107.95)
+			(xy 73.66 99.06) (xy 78.74 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2062,7 +2149,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 69.85) (xy 168.91 71.12)
+			(xy 227.33 30.48) (xy 227.33 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2072,7 +2159,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 128.27) (xy 87.63 128.27)
+			(xy 45.72 119.38) (xy 53.34 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2082,7 +2169,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 76.2) (xy 85.09 76.2)
+			(xy 45.72 67.31) (xy 50.8 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2092,7 +2179,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 156.21) (xy 266.7 156.21)
+			(xy 161.29 171.45) (xy 171.45 171.45)
 		)
 		(stroke
 			(width 0)
@@ -2102,7 +2189,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 135.89) (xy 238.76 135.89)
+			(xy 133.35 151.13) (xy 143.51 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2112,7 +2199,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 60.96) (xy 87.63 60.96)
+			(xy 45.72 52.07) (xy 53.34 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2122,7 +2209,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 69.85) (xy 184.15 69.85)
+			(xy 227.33 30.48) (xy 242.57 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2132,7 +2219,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 135.89) (xy 228.6 135.89)
+			(xy 124.46 151.13) (xy 133.35 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2142,7 +2229,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 128.27) (xy 87.63 113.03)
+			(xy 53.34 119.38) (xy 53.34 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2151,7 +2238,7 @@
 		(uuid "fab83a19-2a4f-4fa8-97e2-af190e58d207")
 	)
 	(label "W"
-		(at 107.95 55.88 0)
+		(at 73.66 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2161,7 +2248,7 @@
 		(uuid "067337a6-0482-4c1e-adc4-87bb3feac48a")
 	)
 	(label "STy"
-		(at 176.53 93.98 0)
+		(at 234.95 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2171,7 +2258,7 @@
 		(uuid "0edfe44d-7fd7-4d6f-bebb-df603b13de7a")
 	)
 	(label "Y0"
-		(at 59.69 123.19 180)
+		(at 25.4 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2181,7 +2268,7 @@
 		(uuid "10bbcf0a-d0af-4c86-b339-22e324a75ed8")
 	)
 	(label "scl"
-		(at 156.21 81.28 180)
+		(at 214.63 41.91 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2191,7 +2278,7 @@
 		(uuid "129bae99-aa15-4f07-b372-96ad7a796fdd")
 	)
 	(label "X0"
-		(at 116.84 146.05 180)
+		(at 246.38 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2201,7 +2288,7 @@
 		(uuid "1778011e-b71c-4cc1-bc73-2fc9c82c2aff")
 	)
 	(label "Y1"
-		(at 59.69 133.35 180)
+		(at 25.4 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2211,7 +2298,7 @@
 		(uuid "19d5433e-3832-4092-9383-3d90ba34e12f")
 	)
 	(label "W"
-		(at 142.24 158.75 0)
+		(at 271.78 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2221,7 +2308,7 @@
 		(uuid "1c44198e-69c3-4be6-8cf0-dd440594178b")
 	)
 	(label "X2"
-		(at 116.84 151.13 180)
+		(at 246.38 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2231,7 +2318,7 @@
 		(uuid "24759abf-fdb4-431c-a3f9-139ec1459b42")
 	)
 	(label "XB"
-		(at 80.01 66.04 0)
+		(at 45.72 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2241,7 +2328,7 @@
 		(uuid "24c6ff2c-8443-4cc0-afd7-e9952a2f0f14")
 	)
 	(label "Y2"
-		(at 59.69 97.79 180)
+		(at 25.4 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2251,7 +2338,7 @@
 		(uuid "271f1944-ae84-4f84-bd63-3d69817cbe6e")
 	)
 	(label "X1"
-		(at 116.84 148.59 180)
+		(at 246.38 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2261,7 +2348,7 @@
 		(uuid "29d21f63-9e7f-4087-ab84-8367456a7143")
 	)
 	(label "YC"
-		(at 107.95 97.79 0)
+		(at 73.66 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2271,7 +2358,7 @@
 		(uuid "468406f6-b165-4129-888d-c61d15df7a30")
 	)
 	(label "X3"
-		(at 59.69 71.12 180)
+		(at 25.4 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2281,7 +2368,7 @@
 		(uuid "4810ecd6-790d-4f33-a32d-19ac4955c237")
 	)
 	(label "V"
-		(at 135.89 71.12 0)
+		(at 101.6 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2291,7 +2378,7 @@
 		(uuid "4a836356-a4e2-4fb1-9139-d9d8d5fd2558")
 	)
 	(label "STy"
-		(at 116.84 179.07 180)
+		(at 246.38 139.7 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2301,7 +2388,7 @@
 		(uuid "4db15bd7-af64-4a43-b51f-6728ba5b9047")
 	)
 	(label "Z"
-		(at 142.24 146.05 0)
+		(at 271.78 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2311,7 +2398,7 @@
 		(uuid "583c5957-b01b-4ac6-93bc-56433fb6eb91")
 	)
 	(label "A"
-		(at 176.53 88.9 0)
+		(at 234.95 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2321,7 +2408,7 @@
 		(uuid "586035ff-a3b1-4f9c-bfe3-dea8ddb83938")
 	)
 	(label "XC"
-		(at 107.95 45.72 0)
+		(at 73.66 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2331,7 +2418,7 @@
 		(uuid "59069f2e-db32-4814-ac46-b417f267eb01")
 	)
 	(label "YA"
-		(at 156.21 86.36 180)
+		(at 214.63 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2341,7 +2428,7 @@
 		(uuid "621e8078-e097-4584-90a7-8a4704e17ab8")
 	)
 	(label "YB"
-		(at 156.21 93.98 180)
+		(at 214.63 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2351,7 +2438,7 @@
 		(uuid "633f3881-8c2a-4cf2-8644-17947b2b35a4")
 	)
 	(label "XA"
-		(at 80.01 39.37 0)
+		(at 45.72 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2361,7 +2448,7 @@
 		(uuid "6675e844-31f0-41b0-8367-31918575a548")
 	)
 	(label "XB"
-		(at 156.21 88.9 180)
+		(at 214.63 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2371,7 +2458,7 @@
 		(uuid "672cb0a4-d049-426f-aa6f-1068e97b006e")
 	)
 	(label "X2"
-		(at 59.69 81.28 180)
+		(at 25.4 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2381,7 +2468,7 @@
 		(uuid "6b6e5e8d-4f27-4c71-b7c4-12bfdf5adad9")
 	)
 	(label "B"
-		(at 116.84 173.99 180)
+		(at 246.38 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2391,7 +2478,7 @@
 		(uuid "6edf5783-850a-4971-a710-f8bcddb943a9")
 	)
 	(label "Y2"
-		(at 116.84 163.83 180)
+		(at 246.38 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2401,7 +2488,7 @@
 		(uuid "728f5bf0-d3d6-43b7-b97e-90059c96326b")
 	)
 	(label "STx"
-		(at 176.53 91.44 0)
+		(at 234.95 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2411,7 +2498,7 @@
 		(uuid "7424c1e7-6e2e-401e-9bda-64fe4f4acce3")
 	)
 	(label "Y0"
-		(at 116.84 158.75 180)
+		(at 246.38 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2421,7 +2508,7 @@
 		(uuid "79632ab0-9fc3-4db0-9bff-550ca670931e")
 	)
 	(label "STx"
-		(at 116.84 176.53 180)
+		(at 246.38 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2431,7 +2518,7 @@
 		(uuid "835a3daa-cf0c-4b1d-ac54-abf60f05c3ae")
 	)
 	(label "X0"
-		(at 59.69 54.61 180)
+		(at 25.4 45.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2441,7 +2528,7 @@
 		(uuid "8ce10ad4-f2a6-4a68-aec2-7dfcd6cd0d4d")
 	)
 	(label "scl"
-		(at 212.09 74.93 180)
+		(at 256.54 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2451,7 +2538,7 @@
 		(uuid "963e839e-c454-4d4c-8912-cba9fef23f54")
 	)
 	(label "sda"
-		(at 212.09 69.85 180)
+		(at 256.54 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2461,7 +2548,7 @@
 		(uuid "97a8f41e-709f-4fc6-8d3c-0b7462554727")
 	)
 	(label "sda"
-		(at 156.21 78.74 180)
+		(at 214.63 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2471,7 +2558,7 @@
 		(uuid "97e747b0-cd58-4a4a-a64e-947fc3b178a1")
 	)
 	(label "X1"
-		(at 59.69 44.45 180)
+		(at 25.4 35.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2481,7 +2568,7 @@
 		(uuid "a160a473-b738-405a-9205-52af360de627")
 	)
 	(label "A"
-		(at 116.84 171.45 180)
+		(at 246.38 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2491,7 +2578,7 @@
 		(uuid "a3383853-b2b3-4fda-9646-79fbc4019009")
 	)
 	(label "Z"
-		(at 135.89 81.28 0)
+		(at 101.6 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2501,7 +2588,7 @@
 		(uuid "aa940ef7-6dd7-4627-b87a-94ab09b86090")
 	)
 	(label "XC"
-		(at 156.21 91.44 180)
+		(at 214.63 52.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2511,7 +2598,7 @@
 		(uuid "ad217722-5972-4510-be2a-39da4a7b6b5e")
 	)
 	(label "YC"
-		(at 156.21 99.06 180)
+		(at 214.63 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2521,7 +2608,7 @@
 		(uuid "b45c2a28-896e-4c4b-9736-d4fbc24d6808")
 	)
 	(label "V"
-		(at 176.53 78.74 0)
+		(at 234.95 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2531,7 +2618,7 @@
 		(uuid "b89922fd-bcc4-4cc0-9a19-c12e01692771")
 	)
 	(label "Y3"
-		(at 116.84 166.37 180)
+		(at 246.38 127 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2541,7 +2628,7 @@
 		(uuid "c4daca35-60d7-4731-8e80-5f2bff3fceb4")
 	)
 	(label "X3"
-		(at 116.84 153.67 180)
+		(at 246.38 114.3 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2551,7 +2638,7 @@
 		(uuid "c95f9baa-bae6-474c-a41e-6c2183c4778e")
 	)
 	(label "Y3"
-		(at 59.69 107.95 180)
+		(at 25.4 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2561,7 +2648,7 @@
 		(uuid "de682f48-7d29-4798-bed2-615898ee9d79")
 	)
 	(label "YA"
-		(at 80.01 118.11 0)
+		(at 45.72 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2571,7 +2658,7 @@
 		(uuid "e26f9cac-e617-47ac-b2dc-382bc55b2fbb")
 	)
 	(label "Y1"
-		(at 116.84 161.29 180)
+		(at 246.38 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2581,7 +2668,7 @@
 		(uuid "e4438ef2-f4d8-4fe7-9bee-50699c0a0d59")
 	)
 	(label "YB"
-		(at 80.01 92.71 0)
+		(at 45.72 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2591,7 +2678,7 @@
 		(uuid "e70ea7af-82dd-42b4-b12a-171af30f5018")
 	)
 	(label "B"
-		(at 176.53 86.36 0)
+		(at 234.95 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2601,7 +2688,7 @@
 		(uuid "eff361e5-3605-41e1-955b-65960a4a0c6f")
 	)
 	(label "XA"
-		(at 176.53 96.52 0)
+		(at 234.95 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2612,7 +2699,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 214.63 74.93 0)
+		(at 259.08 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2621,7 +2708,7 @@
 		(fields_autoplaced yes)
 		(uuid "0c8d4194-90c6-4e6a-8dac-14ce1f89ce28")
 		(property "Reference" "scl1"
-			(at 215.9 73.6599 0)
+			(at 260.35 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2630,7 +2717,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 215.9 76.1999 0)
+			(at 260.35 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,7 +2726,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 219.71 74.93 0)
+			(at 264.16 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2648,7 +2735,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 219.71 74.93 0)
+			(at 264.16 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2657,7 +2744,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 214.63 74.93 0)
+			(at 259.08 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2679,7 +2766,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 219.71 146.05 0)
+		(at 124.46 161.29 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2688,7 +2775,7 @@
 		(fields_autoplaced yes)
 		(uuid "11fbc91f-9b77-4a66-8c2c-c2fae61b5491")
 		(property "Reference" "U3"
-			(at 223.52 144.7799 0)
+			(at 128.27 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2697,7 +2784,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 223.52 147.3199 0)
+			(at 128.27 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2706,7 +2793,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 219.71 146.05 0)
+			(at 124.46 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2715,7 +2802,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 219.71 146.05 0)
+			(at 124.46 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2724,7 +2811,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 219.71 146.05 0)
+			(at 124.46 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2733,7 +2820,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 219.71 146.05 0)
+			(at 124.46 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2770,7 +2857,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 69.85 128.27 180)
+		(at 35.56 119.38 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2779,7 +2866,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ced87df-e9ac-4f0b-9d41-3946b98f7a24")
 		(property "Reference" "U3"
-			(at 71.12 113.03 0)
+			(at 36.83 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2787,7 +2874,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 71.12 115.57 0)
+			(at 36.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2795,7 +2882,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 69.85 128.27 0)
+			(at 35.56 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2804,7 +2891,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 69.85 128.27 0)
+			(at 35.56 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2813,7 +2900,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 69.85 128.27 0)
+			(at 35.56 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2822,7 +2909,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 69.85 128.27 0)
+			(at 35.56 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2859,7 +2946,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 266.7 146.05 0)
+		(at 171.45 161.29 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2868,7 +2955,7 @@
 		(fields_autoplaced yes)
 		(uuid "1fefec91-2a04-412e-8cf0-16d4f40ec8fc")
 		(property "Reference" "U5"
-			(at 270.51 144.7799 0)
+			(at 175.26 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2877,7 +2964,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 270.51 147.3199 0)
+			(at 175.26 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2886,7 +2973,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 266.7 146.05 0)
+			(at 171.45 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2895,7 +2982,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 266.7 146.05 0)
+			(at 171.45 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2904,7 +2991,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 266.7 146.05 0)
+			(at 171.45 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2913,7 +3000,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 266.7 146.05 0)
+			(at 171.45 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2950,7 +3037,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 76.2 0)
+		(at 205.74 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2959,7 +3046,7 @@
 		(fields_autoplaced yes)
 		(uuid "21d424a7-b29e-4381-a42c-20b334c3e97b")
 		(property "Reference" "#PWR08"
-			(at 147.32 82.55 0)
+			(at 205.74 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2968,7 +3055,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 81.28 0)
+			(at 205.74 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2976,7 +3063,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 76.2 0)
+			(at 205.74 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2985,7 +3072,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 76.2 0)
+			(at 205.74 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2994,7 +3081,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 76.2 0)
+			(at 205.74 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3016,7 +3103,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 69.85 76.2 180)
+		(at 35.56 67.31 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3025,7 +3112,7 @@
 		(fields_autoplaced yes)
 		(uuid "26b72325-f062-475a-8ba2-5edd11a29b66")
 		(property "Reference" "U2"
-			(at 71.12 60.96 0)
+			(at 36.83 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3033,7 +3120,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 71.12 63.5 0)
+			(at 36.83 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3041,7 +3128,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 69.85 76.2 0)
+			(at 35.56 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3050,7 +3137,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 69.85 76.2 0)
+			(at 35.56 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3059,7 +3146,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 69.85 76.2 0)
+			(at 35.56 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3068,7 +3155,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 69.85 76.2 0)
+			(at 35.56 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3105,7 +3192,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 184.15 73.66 0)
+		(at 242.57 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3114,7 +3201,7 @@
 		(fields_autoplaced yes)
 		(uuid "34935291-7900-4832-825e-f21a338b389a")
 		(property "Reference" "C2"
-			(at 186.69 72.3962 0)
+			(at 245.11 33.0262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3123,7 +3210,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 186.69 74.9362 0)
+			(at 245.11 35.5662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3132,7 +3219,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 184.15 73.66 0)
+			(at 242.57 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3141,7 +3228,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 73.66 0)
+			(at 242.57 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3150,7 +3237,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 184.15 73.66 0)
+			(at 242.57 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3159,7 +3246,7 @@
 			)
 		)
 		(property "DigiKey" "1276-CL05B104KP5VPNCCT-ND"
-			(at 184.15 73.66 0)
+			(at 242.57 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3184,7 +3271,7 @@
 	)
 	(symbol
 		(lib_id "4xxx:14529")
-		(at 129.54 161.29 0)
+		(at 259.08 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3193,7 +3280,7 @@
 		(fields_autoplaced yes)
 		(uuid "3ba6119a-6fe2-4c1c-bfa9-ce102044a5ed")
 		(property "Reference" "U9"
-			(at 131.6833 138.43 0)
+			(at 261.2233 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3202,7 +3289,7 @@
 			)
 		)
 		(property "Value" "14529"
-			(at 131.6833 140.97 0)
+			(at 261.2233 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3211,7 +3298,7 @@
 			)
 		)
 		(property "Footprint" "Library:DIP-16_board"
-			(at 129.54 161.29 0)
+			(at 259.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3220,7 +3307,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.alldatasheet.com/datasheet-pdf/pdf/97272/HITACHI/HD14529B.html"
-			(at 129.54 161.29 0)
+			(at 259.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3229,7 +3316,7 @@
 			)
 		)
 		(property "Description" "Dual 4 to 1 Multiplexer"
-			(at 129.54 161.29 0)
+			(at 259.08 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3296,7 +3383,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 256.54 146.05 0)
+		(at 161.29 161.29 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3305,7 +3392,7 @@
 		(fields_autoplaced yes)
 		(uuid "3db544e4-1739-4807-9e06-b18353d2903e")
 		(property "Reference" "U6"
-			(at 260.35 144.7799 0)
+			(at 165.1 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3314,7 +3401,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 260.35 147.3199 0)
+			(at 165.1 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3323,7 +3410,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 256.54 146.05 0)
+			(at 161.29 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3332,7 +3419,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 256.54 146.05 0)
+			(at 161.29 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3341,7 +3428,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 256.54 146.05 0)
+			(at 161.29 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3350,7 +3437,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 256.54 146.05 0)
+			(at 161.29 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3387,7 +3474,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 69.85 49.53 180)
+		(at 35.56 40.64 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3396,7 +3483,7 @@
 		(fields_autoplaced yes)
 		(uuid "480d1575-88ef-43c0-b486-277aa9ec08aa")
 		(property "Reference" "U1"
-			(at 71.12 34.29 0)
+			(at 36.83 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3404,7 +3491,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 71.12 36.83 0)
+			(at 36.83 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3412,7 +3499,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 69.85 49.53 0)
+			(at 35.56 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3421,7 +3508,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 69.85 49.53 0)
+			(at 35.56 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3430,7 +3517,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 69.85 49.53 0)
+			(at 35.56 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3439,7 +3526,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 69.85 49.53 0)
+			(at 35.56 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3476,7 +3563,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 266.7 156.21 0)
+		(at 171.45 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3485,7 +3572,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e0fb2f9-a3c5-4b1b-825b-e476ebaec32d")
 		(property "Reference" "#PWR05"
-			(at 266.7 162.56 0)
+			(at 171.45 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3494,7 +3581,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 266.7 161.29 0)
+			(at 171.45 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3502,7 +3589,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 266.7 156.21 0)
+			(at 171.45 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3511,7 +3598,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 266.7 156.21 0)
+			(at 171.45 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3520,7 +3607,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 266.7 156.21 0)
+			(at 171.45 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3542,7 +3629,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 184.15 76.2 0)
+		(at 242.57 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3551,7 +3638,7 @@
 		(fields_autoplaced yes)
 		(uuid "501696bb-4ee5-4415-b53b-a53da9143775")
 		(property "Reference" "#PWR09"
-			(at 184.15 82.55 0)
+			(at 242.57 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3560,7 +3647,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 184.15 81.28 0)
+			(at 242.57 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3568,7 +3655,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 76.2 0)
+			(at 242.57 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3577,7 +3664,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 76.2 0)
+			(at 242.57 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3586,7 +3673,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 184.15 76.2 0)
+			(at 242.57 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3608,7 +3695,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 228.6 146.05 0)
+		(at 133.35 161.29 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3617,7 +3704,7 @@
 		(fields_autoplaced yes)
 		(uuid "55004446-6fbc-4711-a0a0-2043e87642d9")
 		(property "Reference" "U2"
-			(at 232.41 144.7799 0)
+			(at 137.16 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3626,7 +3713,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 232.41 147.3199 0)
+			(at 137.16 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3635,7 +3722,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 228.6 146.05 0)
+			(at 133.35 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3644,7 +3731,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 228.6 146.05 0)
+			(at 133.35 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3653,7 +3740,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 228.6 146.05 0)
+			(at 133.35 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3662,7 +3749,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 228.6 146.05 0)
+			(at 133.35 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3699,7 +3786,7 @@
 	)
 	(symbol
 		(lib_id "Library:SLG46824G")
-		(at 166.37 88.9 0)
+		(at 224.79 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3708,7 +3795,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b290cdb-c321-40fc-9c0a-51386cbb3465")
 		(property "Reference" "U8"
-			(at 168.5133 106.68 0)
+			(at 226.9333 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3717,7 +3804,7 @@
 			)
 		)
 		(property "Value" "SLG46824V"
-			(at 168.5133 109.22 0)
+			(at 226.9333 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3726,7 +3813,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:Renesas_UQFN-20_2x3mm_P0.4mm_LayoutBorder4x6y"
-			(at 166.37 120.65 0)
+			(at 224.79 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3735,7 +3822,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.renesas.com/in/en/document/dst/slg46826-datasheet"
-			(at 166.37 118.11 0)
+			(at 224.79 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3744,7 +3831,7 @@
 			)
 		)
 		(property "Description" "GreenPAK Programmable Mixed-Signal Matrix with In-System Programmability, TSSOP-20"
-			(at 166.37 88.9 0)
+			(at 224.79 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3753,7 +3840,7 @@
 			)
 		)
 		(property "DigiKey" "1695-SLG46824VCT-ND"
-			(at 166.37 88.9 0)
+			(at 224.79 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3832,7 +3919,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 238.76 146.05 0)
+		(at 143.51 161.29 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3841,7 +3928,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d374207-5b1a-400d-b559-bdba8b4fefc1")
 		(property "Reference" "U1"
-			(at 242.57 144.7799 0)
+			(at 147.32 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,7 +3937,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 242.57 147.3199 0)
+			(at 147.32 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3859,7 +3946,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 238.76 146.05 0)
+			(at 143.51 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3868,7 +3955,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 238.76 146.05 0)
+			(at 143.51 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,7 +3964,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 238.76 146.05 0)
+			(at 143.51 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3886,7 +3973,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 238.76 146.05 0)
+			(at 143.51 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3923,7 +4010,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 166.37 106.68 0)
+		(at 224.79 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3932,7 +4019,7 @@
 		(fields_autoplaced yes)
 		(uuid "776b3686-359c-4a9d-99e4-ed1b73137589")
 		(property "Reference" "#PWR04"
-			(at 166.37 113.03 0)
+			(at 224.79 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3941,7 +4028,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 166.37 111.76 0)
+			(at 224.79 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3949,7 +4036,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 106.68 0)
+			(at 224.79 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3958,7 +4045,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 106.68 0)
+			(at 224.79 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3967,7 +4054,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 166.37 106.68 0)
+			(at 224.79 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3989,7 +4076,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Small")
-		(at 214.63 69.85 0)
+		(at 259.08 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3998,7 +4085,7 @@
 		(fields_autoplaced yes)
 		(uuid "96817a5e-221e-46ea-91ce-a72a60428196")
 		(property "Reference" "sda1"
-			(at 215.9 68.5799 0)
+			(at 260.35 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4007,7 +4094,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Small"
-			(at 215.9 71.1199 0)
+			(at 260.35 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4016,7 +4103,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 219.71 69.85 0)
+			(at 264.16 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4025,7 +4112,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 219.71 69.85 0)
+			(at 264.16 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4034,7 +4121,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 214.63 69.85 0)
+			(at 259.08 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4056,7 +4143,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 163.83 68.58 0)
+		(at 222.25 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4065,7 +4152,7 @@
 		(fields_autoplaced yes)
 		(uuid "ae5fa65a-a7e1-4bbf-8fe5-2f9a6bf19281")
 		(property "Reference" "#PWR01"
-			(at 163.83 72.39 0)
+			(at 222.25 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4074,7 +4161,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 163.83 63.5 0)
+			(at 222.25 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4082,7 +4169,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 68.58 0)
+			(at 222.25 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4091,7 +4178,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 68.58 0)
+			(at 222.25 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4100,7 +4187,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 163.83 68.58 0)
+			(at 222.25 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4122,7 +4209,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 186.69 0)
+		(at 259.08 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4131,7 +4218,7 @@
 		(fields_autoplaced yes)
 		(uuid "ae613573-a34a-4da6-a0cd-974d2f8fceb5")
 		(property "Reference" "#PWR07"
-			(at 129.54 193.04 0)
+			(at 259.08 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4140,7 +4227,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 191.77 0)
+			(at 259.08 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4148,7 +4235,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 186.69 0)
+			(at 259.08 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4157,7 +4244,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 186.69 0)
+			(at 259.08 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4166,7 +4253,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 186.69 0)
+			(at 259.08 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4188,7 +4275,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 129.54 138.43 0)
+		(at 259.08 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4197,7 +4284,7 @@
 		(fields_autoplaced yes)
 		(uuid "b08dbf63-faf4-4988-9242-9e51eb374878")
 		(property "Reference" "#PWR06"
-			(at 129.54 142.24 0)
+			(at 259.08 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4206,7 +4293,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 129.54 133.35 0)
+			(at 259.08 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4214,7 +4301,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 138.43 0)
+			(at 259.08 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4223,7 +4310,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 138.43 0)
+			(at 259.08 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4232,7 +4319,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 129.54 138.43 0)
+			(at 259.08 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4254,7 +4341,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 97.79 107.95 180)
+		(at 63.5 99.06 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4263,7 +4350,7 @@
 		(fields_autoplaced yes)
 		(uuid "b894b21c-d71d-4a31-95c2-61dd9e2f267a")
 		(property "Reference" "U6"
-			(at 99.06 92.71 0)
+			(at 64.77 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4271,7 +4358,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 99.06 95.25 0)
+			(at 64.77 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4279,7 +4366,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 97.79 107.95 0)
+			(at 63.5 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4288,7 +4375,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 97.79 107.95 0)
+			(at 63.5 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4297,7 +4384,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 97.79 107.95 0)
+			(at 63.5 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4306,7 +4393,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 97.79 107.95 0)
+			(at 63.5 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4343,7 +4430,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 147.32 73.66 0)
+		(at 205.74 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4352,7 +4439,7 @@
 		(fields_autoplaced yes)
 		(uuid "bb09dcc3-8b37-4855-897e-654845f8f8bf")
 		(property "Reference" "C1"
-			(at 149.86 72.3962 0)
+			(at 208.28 33.0262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4361,7 +4448,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 149.86 74.9362 0)
+			(at 208.28 35.5662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4370,7 +4457,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 147.32 73.66 0)
+			(at 205.74 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4379,7 +4466,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 147.32 73.66 0)
+			(at 205.74 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4388,7 +4475,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 147.32 73.66 0)
+			(at 205.74 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4397,7 +4484,7 @@
 			)
 		)
 		(property "DigiKey" "1276-CL05B104KP5VPNCCT-ND"
-			(at 147.32 73.66 0)
+			(at 205.74 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,7 +4509,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 168.91 68.58 0)
+		(at 227.33 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4431,7 +4518,7 @@
 		(fields_autoplaced yes)
 		(uuid "c2e90128-cef1-4573-bafb-f1632754ce87")
 		(property "Reference" "#PWR02"
-			(at 168.91 72.39 0)
+			(at 227.33 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4440,7 +4527,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 168.91 63.5 0)
+			(at 227.33 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4448,7 +4535,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 68.58 0)
+			(at 227.33 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4457,7 +4544,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 68.58 0)
+			(at 227.33 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4466,7 +4553,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 168.91 68.58 0)
+			(at 227.33 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4488,7 +4575,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 125.73 81.28 180)
+		(at 91.44 72.39 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4497,7 +4584,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6b0a420-31f9-4814-b575-26ea4ddc398a")
 		(property "Reference" "U7"
-			(at 127 66.04 0)
+			(at 92.71 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4505,7 +4592,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 127 68.58 0)
+			(at 92.71 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4513,7 +4600,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 125.73 81.28 0)
+			(at 91.44 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4522,7 +4609,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 125.73 81.28 0)
+			(at 91.44 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4531,7 +4618,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 125.73 81.28 0)
+			(at 91.44 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4540,7 +4627,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 125.73 81.28 0)
+			(at 91.44 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4577,7 +4664,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 210.82 146.05 0)
+		(at 115.57 161.29 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4586,7 +4673,7 @@
 		(fields_autoplaced yes)
 		(uuid "d44d1979-04bf-481e-a1b7-711f65d93a65")
 		(property "Reference" "U4"
-			(at 214.63 144.7799 0)
+			(at 119.38 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4595,7 +4682,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 214.63 147.3199 0)
+			(at 119.38 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4604,7 +4691,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 210.82 146.05 0)
+			(at 115.57 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4613,7 +4700,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 210.82 146.05 0)
+			(at 115.57 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4622,7 +4709,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 210.82 146.05 0)
+			(at 115.57 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4631,7 +4718,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 210.82 146.05 0)
+			(at 115.57 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4668,7 +4755,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 210.82 135.89 0)
+		(at 115.57 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4677,7 +4764,7 @@
 		(fields_autoplaced yes)
 		(uuid "da308dda-1f36-40e8-80d4-e238ac886607")
 		(property "Reference" "#PWR03"
-			(at 210.82 139.7 0)
+			(at 115.57 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4686,7 +4773,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 210.82 130.81 0)
+			(at 115.57 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4694,7 +4781,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 210.82 135.89 0)
+			(at 115.57 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4703,7 +4790,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 135.89 0)
+			(at 115.57 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4712,7 +4799,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 210.82 135.89 0)
+			(at 115.57 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4734,7 +4821,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 97.79 55.88 180)
+		(at 63.5 46.99 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4743,7 +4830,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6b7258a-79ba-42c6-b128-ac25476a4c6c")
 		(property "Reference" "U5"
-			(at 99.06 40.64 0)
+			(at 64.77 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4751,7 +4838,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 99.06 43.18 0)
+			(at 64.77 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4759,7 +4846,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 97.79 55.88 0)
+			(at 63.5 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4768,7 +4855,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 97.79 55.88 0)
+			(at 63.5 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4777,7 +4864,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 97.79 55.88 0)
+			(at 63.5 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4786,7 +4873,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 97.79 55.88 0)
+			(at 63.5 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4823,7 +4910,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 69.85 102.87 180)
+		(at 35.56 93.98 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4832,7 +4919,7 @@
 		(fields_autoplaced yes)
 		(uuid "ed649775-2c56-4bc2-b4a7-934ae5944153")
 		(property "Reference" "U4"
-			(at 71.12 87.63 0)
+			(at 36.83 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4840,7 +4927,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 71.12 90.17 0)
+			(at 36.83 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4848,7 +4935,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 69.85 102.87 0)
+			(at 35.56 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4857,7 +4944,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 69.85 102.87 0)
+			(at 35.56 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4866,7 +4953,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 69.85 102.87 0)
+			(at 35.56 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4875,7 +4962,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 69.85 102.87 0)
+			(at 35.56 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4912,7 +4999,7 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC1G3157")
-		(at 247.65 146.05 0)
+		(at 152.4 161.29 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4921,7 +5008,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9d4ebe0-5af1-4ed1-b070-267b3b4ae052")
 		(property "Reference" "U7"
-			(at 251.46 144.7799 0)
+			(at 156.21 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4930,7 +5017,7 @@
 			)
 		)
 		(property "Value" "74LVC1G3157"
-			(at 251.46 147.3199 0)
+			(at 156.21 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4939,7 +5026,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:Vishay_PowerPAK_SC70-6L_Dual"
-			(at 247.65 146.05 0)
+			(at 152.4 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4948,7 +5035,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 247.65 146.05 0)
+			(at 152.4 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4957,7 +5044,7 @@
 			)
 		)
 		(property "Description" "SPDT Analog Switch, Low-Voltage CMOS"
-			(at 247.65 146.05 0)
+			(at 152.4 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4966,7 +5053,7 @@
 			)
 		)
 		(property "DigiKey" "296-14909-1-ND"
-			(at 247.65 146.05 0)
+			(at 152.4 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
