@@ -9,17 +9,12 @@ substitute in the Dragon 32/64 computers.
 
 ## Limitations ##
 
-The original MC14529 can act a 8:1 multiplexer which ties
-the two output pins together. It can also place the two
-output pins in a high impedance state.
-
-In both cases these configurations are limited in this 
-design to suit the specific use-case for the Dragon.
-
-1. The high impedance state is not implemented
-2. The two output pins are only correct when the X
-inputs are selected, if the Y inputs are selected the 
-result will still be two independant outputs
+The current implementation is functionally complete but
+there is an idiosyncracy of the controlling CPLD that
+needs to be noted. At startup all control outputs are
+floating until each ones goes into a high (on) state,
+the result is that the route of any switch will non-
+deterministic until positively switched.
 
 ## Design ##
 
@@ -30,11 +25,18 @@ of the original device.
 
 The actual multiplexing is performed by an array of
 LS74LVC1G3157 analog SPDT switches. These are available
-in very small packages allowing seven of them to be
-fitted in the available space.
+in very small (1mm x 1mm) packages allowing eight of them 
+to be fitted in the available space.
 
-The board design must retain the footprint of a DIP-16
-device and provides the most significant design constraint.
+The output inhibit is performed by two more SPST
+switches.
+
+The board design retains the footprint of a DIP-16
+component. To necessitate compliance with the available
+space the PCB is 6-layer and utilises minimum sized vias
+and routing. This may limit signal fidelity. Where possible
+signal routing is increased in width and is kept separate 
+from control routing.
 
 ## License ##
 
